@@ -61,11 +61,12 @@ def contains_char(word: str, letter: str) -> None:
 
     # Print summary based on number of matches found
     if count == 0:
-        # No matches found
-        print(f"No instances of {letter} found in {word}")
+        print("No instances of" + letter + " found in " + word)
+    elif count == 1:
+        print("1 instance of" + letter + " found in " + word)
     else:
-        # Multiple matches found (plural "instances")
-        print(f"{count} instances of {letter} found in {word}")
+        # Note the plural 'instances' for counts > 1
+        print(str(count) + " instances of" + letter + " found in " + word)
 
 
 if __name__ == "__main__":
