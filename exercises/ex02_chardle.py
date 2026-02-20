@@ -3,12 +3,6 @@
 __author__ = "730662608"
 
 
-def main() -> None:
-    """Entry point for the Chardle game - coordinates the game flow."""
-    # Call contains_char with inputs from input_word and input_letter
-    contains_char(word=input_word(), letter=input_letter())
-
-
 def input_word() -> str:
     """Prompts user for a 5-character word and returns it."""
     word: str = input("Enter a 5-character word: ")
@@ -61,13 +55,19 @@ def contains_char(word: str, letter: str) -> None:
 
     # Print summary based on number of matches found
     if count == 0:
-        print("No instances of" + letter + " found in " + word)
+        print(f"No instances of {letter} found in {word}")
     elif count == 1:
-        print("1 instance of" + letter + " found in " + word)
+        print(f"1 instance of {letter} found in {word}")
     else:
-        # Note the plural 'instances' for counts > 1
-        print(str(count) + " instances of" + letter + " found in " + word)
+        print(f"{count} instances of {letter} found in {word}")
+
+
+def main() -> None:
+    contains_char(word=input_word(), letter=input_letter())
 
 
 if __name__ == "__main__":
     main()
+
+# Put the define main at the last function intead of at the front
+# exact wordings of instances/instance - also f{count} is correct
