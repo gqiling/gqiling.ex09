@@ -33,7 +33,7 @@ Before analyzing the data, I removed rows with empty responses in the numeric Li
 
 ## Visualization 1: Distribution of cross-disciplinary interest
 
-![Distribution of interest in CS connections](chart1_connections_distribution.png)
+![Distribution of interest in CS connections](exercises\ex09\chart1_connections_distribution.png)
 
 This chart shows how students answered the `interested_connections` question, separated by CS major/minor status. The main purpose of this graph is to see whether there is already demand for course material that connects computer science to other fields.
 
@@ -41,7 +41,7 @@ The distribution suggests that many students, including many non-CS students, ar
 
 ## Visualization 2: Cross-disciplinary interest and intellectual interest
 
-![Interest in CS connections vs course intellectual interest](chart2_connections_vs_interesting.png)
+![Interest in CS connections vs course intellectual interest](exercises\ex09\chart2_connections_vs_interesting.png)
 
 This scatter plot compares each student's `interested_connections` score with their `interesting` score. If the points generally move upward as `interested_connections` increases, that suggests students who care more about cross-disciplinary connections also tend to find the course more intellectually interesting.
 
@@ -49,7 +49,7 @@ The pattern supports the idea that connecting COMP110 to other fields could impr
 
 ## Visualization 3: Course interest grouped by cross-disciplinary interest
 
-![Boxplot of course interest by CS connections interest](chart3_boxplot_interesting_by_connections.png)
+![Boxplot of course interest by CS connections interest](exercises\ex09\chart3_boxplot_interesting_by_connections.png)
 
 This box plot groups students by their `interested_connections` score and shows the distribution of their `interesting` scores. This is useful because it summarizes the median and spread for each group rather than only showing individual points.
 
@@ -57,7 +57,7 @@ If the median `interesting` score rises across the groups, that gives additional
 
 ## Visualization 4: Mean course sentiment scores
 
-![Mean course sentiment scores by cross-disciplinary interest](chart4_mean_scores_by_connections.png)
+![Mean course sentiment scores by cross-disciplinary interest](exercises\ex09\chart4_mean_scores_by_connections.png)
 
 This line plot compares the average values of three course sentiment measures at each level of `interested_connections`: `interesting`, `valuable`, and `would_recommend`.
 
